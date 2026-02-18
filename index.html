@@ -1,78 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Patch v1.1</title>
+  <title>Sorry Aarvee 🥺</title>
   <style>
     body {
-      margin: 0;
-      background: #0f0f0f;
-      color: #00ff9d;
-      font-family: Consolas, monospace;
+      background: #ffe6f0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      font-family: Comic Sans MS, cursive;
+      text-align: center;
+      overflow: hidden;
     }
-
-    .terminal {
-      background: #161616;
+    .box {
+      background: white;
       padding: 30px;
-      border-radius: 8px;
-      width: 420px;
-      box-shadow: 0 0 20px rgba(0,255,157,0.2);
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      max-width: 400px;
+      position: relative;
     }
+    h1 { color: #ff4d88; }
 
-    .line {
-      margin: 8px 0;
-    }
-
-    .btn {
-      margin-top: 20px;
-      padding: 8px 14px;
-      background: transparent;
-      border: 1px solid #00ff9d;
-      color: #00ff9d;
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
       cursor: pointer;
-      font-family: Consolas, monospace;
+      margin: 10px;
+      position: relative;
     }
 
-    .btn:hover {
-      background: #00ff9d;
-      color: #0f0f0f;
+    #yes {
+      background: #ff4d88;
+      color: white;
     }
 
     #no {
+      background: #999;
+      color: white;
       position: absolute;
     }
   </style>
 </head>
 <body>
+  <div class="box">
+    <h1>Hey Aarvee!!!</h1>
+    <p>
+      Error 404:Im sorry my brain buged.<br><br>
+      I teased you and now full system crash 💥<br><br>
+      You are not a joke, you're main character energy 😌✨<br><br>
+      Can we debug this and go back to bestfriend mode?
+    </p>
 
-  <div class="terminal">
-    <div class="line">> initializing apology_protocol...</div>
-    <div class="line">> detecting issue: unnecessary_teasing</div>
-    <div class="line">> impact_level: high</div>
-    <div class="line">> priority: Aarvee</div>
-    <div class="line">> status: genuinely_sorry</div>
-    <div class="line">> request: restore_bestfriend_mode?</div>
-
-    <button class="btn" onclick="alert('Patch applied successfully. Thank you 🙂')">
-      Accept Patch
+    <button id="yes" onclick="alert('YAYYY 🥳 Bestfriend restored successfully ❤️')">
+      Forgive 😌
     </button>
 
-    <button class="btn" id="no">Reject Patch</button>
+    <button id="no">Still Angry 😤</button>
   </div>
 
   <script>
     const noBtn = document.getElementById("no");
 
     noBtn.addEventListener("mouseover", function() {
-      const x = Math.random() * (window.innerWidth - 120);
-      const y = Math.random() * (window.innerHeight - 40);
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 50);
       noBtn.style.left = x + "px";
       noBtn.style.top = y + "px";
     });
   </script>
-
 </body>
 </html>
